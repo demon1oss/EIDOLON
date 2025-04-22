@@ -630,58 +630,13 @@ body, .passages-wrapper {
 .test-message {
   position: absolute;
   top: 130vh; /* или меньше, например, 5vh — регулируйте по вкусу */
-}
-
-.music-button {
-  position: fixed;
-  top: 15px;
-  right: 20px;
-  padding: 10px 18px;
-  background: linear-gradient(135deg, #3399ff, #66ccff);
-  border: none;
-  border-radius: 8px;
-  color: white;
-  font-weight: bold;
-  font-family: 'Arial', sans-serif;
-  font-size: 14px;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(51, 153, 255, 0.5);
-  transition: background 0.3s ease, transform 0.2s ease;
-  z-index: 1000;
-}
-
-.music-button:hover {
-  background: linear-gradient(135deg, #2673cc, #3399ff);
-  transform: scale(1.05);
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">$(document).on(':passagerender', function () {
     if ($('#watermark').length === 0) {
         $('body').append('<div id="watermark">Created by demonloss</div>');
     }
 });
 
-window.scrollTo(0, 0);  /* Прокрутить страницу до самого верха */</script><tw-passagedata pid="1" name="Пролог" tags="" position="625,275" size="100,100">&lt;audio id=&quot;bg-music&quot; autoplay loop&gt;
-  &lt;source src=&quot;https://files.catbox.moe/35r7fo.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
-&lt;/audio&gt;
-
-&lt;button id=&quot;music-toggle&quot; onclick=&quot;toggleMusic()&quot; class=&quot;music-button&quot;&gt;
-  Музыка: ВКЛ
-&lt;/button&gt;
-
-&lt;script&gt;
-  function toggleMusic() {
-    var music = document.getElementById(&#39;bg-music&#39;);
-    var button = document.getElementById(&#39;music-toggle&#39;);
-    if (music.paused) {
-      music.play();
-      button.innerText = &quot;Музыка: ВКЛ&quot;;
-    } else {
-      music.pause();
-      button.innerText = &quot;Музыка: ВЫКЛ&quot;;
-    }
-  }
-&lt;/script&gt;
-
-&lt;p class=&quot;gradient-text&quot;&gt;Ты просыпаешься...&lt;/p&gt;
+window.scrollTo(0, 0);  /* Прокрутить страницу до самого верха */</script><tw-passagedata pid="1" name="Пролог" tags="" position="625,275" size="100,100">&lt;p class=&quot;gradient-text&quot;&gt;Ты просыпаешься...&lt;/p&gt;
 
 Сначала — только темнота и слабое шипение воздуха. Затем — мягкое пульсирующее свечение на границе зрения. Медленно приходит осознание: ты не дома. Не в своей квартире. Не в мире, где живёшь. Всё тело словно окутано тёплой, вязкой жидкостью. Но ты дышишь. Спокойно, ровно. А когда глаза, наконец, привыкают к свету — ты видишь потолок капсулы. Белый. Идеально гладкий.
 
